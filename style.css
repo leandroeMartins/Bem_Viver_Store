@@ -8,81 +8,103 @@ body {
 }
 
 header {
-  background: #4CAF50;
+  background: linear-gradient(135deg, #4CAF50, #388E3C);
   color: white;
   text-align: center;
-  padding: 20px 10px;
+  padding: 40px 20px;
+  position: relative;
 }
 
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  font-size: 24px;
+.hero h1 {
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.product {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.product img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-right: 20px;
-  border-radius: 8px;
-}
-
-.product-info {
-  flex-grow: 1;
-}
-
-.product-title {
+.hero p {
   font-size: 18px;
-  margin: 0 0 10px;
+  margin-bottom: 20px;
 }
 
-.product-description {
-  font-size: 14px;
-  color: #666;
-}
-
-.product-button {
-  background: #4CAF50;
-  color: white;
+.cta-button {
+  background: #FFD700;
+  color: #333;
   border: none;
-  padding: 10px 15px;
+  padding: 15px 30px;
+  font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 14px;
+  transition: background 0.3s ease;
 }
 
-.product-button:hover {
-  background: #45a049;
+.cta-button:hover {
+  background: #FFC107;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.benefits {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 14px;
+  color: #555;
+}
+
+.final-cta {
+  background: linear-gradient(135deg, #4CAF50, #388E3C);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.final-cta h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.final-cta p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   background: #333;
   color: white;
-  margin-top: 20px;
 }
